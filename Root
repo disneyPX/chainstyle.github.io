@@ -1,0 +1,9 @@
+/ (root)
+  ├── index.html       <-- Home page
+  ├── about.html       <-- About page
+  ├── services.html    <-- Services page
+  ├── css/
+  │    └── style.css   <-- CSS styles
+  ├── js/
+  │    └── script.js   <-- optional JavaScript
+  └── images/          <-- your images
