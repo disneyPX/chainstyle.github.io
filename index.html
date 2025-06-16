@@ -3,61 +3,158 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ChainStyle - Home</title>
+  <title>ChaiStyle - Crypto Merch</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    :root {
+      --bg: #0e0e0e;
+      --text: #f4f4f4;
+      --accent: #ffeb3b; /* Banano yellow */
+      --accent-dark: #c9b800;
+      --font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
+    }
+
+    body {
+      font-family: var(--font);
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
     }
 
     nav {
-      background-color: #333;
-      overflow: hidden;
+      background-color: #1a1a1a;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #333;
+    }
+
+    nav .logo {
+      font-size: 1.5em;
+      font-weight: bold;
+      color: var(--accent);
     }
 
     nav ul {
-      margin: 0;
-      padding: 0;
       list-style: none;
       display: flex;
-    }
-
-    nav li {
-      flex: 1;
+      gap: 2rem;
     }
 
     nav a {
-      display: block;
-      padding: 14px 16px;
-      text-align: center;
-      color: white;
+      color: var(--text);
       text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
     }
 
     nav a:hover {
-      background-color: #575757;
+      color: var(--accent);
+    }
+
+    .hero {
+      padding: 5rem 2rem;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: var(--accent);
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 0.75rem 1.5rem;
+      background-color: var(--accent);
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: var(--accent-dark);
     }
 
     .content {
-      padding: 20px;
+      max-width: 800px;
+      margin: 3rem auto;
+      padding: 0 2rem;
+      text-align: center;
+    }
+
+    .content h2 {
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+
+    .content ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .content li {
+      padding: 0.5rem 0;
+      color: #bbb;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #777;
+      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
 
   <nav>
+    <div class="logo">ChaiStyle</div>
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
-      <li><a href="services.html">Services</a></li>
+      <li><a href="services.html">Shop</a></li>
     </ul>
   </nav>
 
-  <div class="content">
-    <h1>Welcome to ChainStyle</h1>
-    <p>This is the homepage of your GitHub Pages website.</p>
-  </div>
+  <section class="hero">
+    <h1>Wear the Chain</h1>
+    <p>Crypto fashion meets streetwear — powered by Printful and inspired by Banano vibes.</p>
+    <a class="button" href="services.html">Shop Now</a>
+  </section>
+
+  <section class="content">
+    <h2>What is ChaiStyle?</h2>
+    <p>
+      ChaiStyle is a futuristic crypto merch store that lets blockchain lovers wear their passion.
+      All products are fulfilled by Printful and ship globally.
+    </p>
+
+    <h2>Why You'll Love It</h2>
+    <ul>
+      <li>🟡 Bold designs based on crypto memes and tech</li>
+      <li>🟡 Banano-style fun with a clean minimalist aesthetic</li>
+      <li>🟡 High-quality shirts, hoodies, and more from Printful</li>
+    </ul>
+  </section>
+
+  <footer>
+    &copy; 2025 ChaiStyle. Powered by Printful. Inspired by Banano 🍌.
+  </footer>
 
 </body>
 </html>
